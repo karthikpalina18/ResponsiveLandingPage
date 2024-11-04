@@ -1,0 +1,55 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1em 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the menu items */
+.nav-item:hover {
+    color: #ff5733;
+}
+
+/* Scroll effect when navbar background changes */
+.scrolled {
+    background-color: #222;
+}
+
+/* Section styles for visibility */
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home { background-color: #f4f4f4; }
+#about { background-color: #eaeaea; }
+#services { background-color: #dcdcdc; }
+#contact { background-color: #ccc; }
